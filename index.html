@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header wrapper">
+        <h1>Sample Application</h1>
+        <button type="button" class="add-card span-3" onclick="addCardPop()">+ Add another list</button>
+    </div>
+    <div id="addList" class="form-popup display-none">
+        <span class="close">&times;</span>
+        <div class="form-container">
+            <h2 class="header-text text-cap">Add a list</h2>
+            <input type="text" id="myInputList" placeholder="Add List..." autofocus>
+            <span onclick="addList()" class="addBtn">Add List</span>
+        </div>
+    </div>
+    <div id="addCard" class="form-popup display-none">
+        <span class="close">&times;</span>
+        <div class="form-container">
+            <h2 class="header-text text-cap">Add a card</h2>
+            <input type="text" id="myInput" placeholder="Title..." autofocus>
+            <span onclick="addTask()" class="addBtn">Add Card</span>
+        </div>
+    </div>
+    <div id="myTask" class="wrapper"></div>    
+
+    <script src="script.js"></script>
+</body>
